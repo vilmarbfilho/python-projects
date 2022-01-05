@@ -1,5 +1,12 @@
-from google_play_scraper import app
+from google_play_scraper import app as play_scraper
+from flask import Flask
 
-result = app('applicationId')
+app = Flask(__name__)
 
-print(result)
+@app.route("/")
+def statusApi():
+    return "api running"
+
+@app.route("/app/detail")
+def detail():
+    return play_scraper("applicationId") 
