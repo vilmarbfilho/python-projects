@@ -4,9 +4,9 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def statusApi():
+def status_api():
     return "api running"
 
-@app.route("/app/detail")
-def detail():
+@app.route("/app/details")
+def app_details():
     return play_scraper("applicationId") 
