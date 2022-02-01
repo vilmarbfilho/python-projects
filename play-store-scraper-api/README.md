@@ -16,7 +16,7 @@ $ ./bootstrap.sh
 ```   
 
 Activate env to development
-Setup path Flash on path
+Setup path Flask on path
 ```shell
 $ source ./env/bin/activate 
 ```  
