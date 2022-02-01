@@ -1,14 +1,25 @@
 # Play Store Scraper API
 ...WIP...
 
-Dependencies
------------
-...WIP...
+## Dependencies 
+[Google-Play-Scraper](https://github.com/JoMingyu/google-play-scraper)
 
-Run Application
------------
-...WIP...
+## Setup 
+Install dependencies 
+```shell
+$ pip3 install -r requirements.txt
+```   
 
+Setup path Flash on path
+```shell
+$ ./bootstrap.sh
+```   
+
+Activate env to development
+Setup path Flash on path
+```shell
+$ source ./env/bin/activate 
+```  
 
 License
 --------
