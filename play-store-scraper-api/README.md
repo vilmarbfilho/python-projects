@@ -10,13 +10,12 @@ Install dependencies
 $ pip3 install -r requirements.txt
 ```   
 
-Setup path Flash on path
+Setup path Flask on path
 ```shell
 $ ./bootstrap.sh
 ```   
 
 Activate env to development
-Setup path Flask on path
 ```shell
 $ source ./env/bin/activate 
 ```  
