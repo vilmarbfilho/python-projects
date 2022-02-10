@@ -26,16 +26,11 @@ def app_details():
 
 @app.route("/app/reviews")
 def app_reviews():
-    result, continuation_token = reviews(
+    result = reviews(
         APPLICATION_ID,
         sort=Sort.MOST_RELEVANT, # defaults to Sort.MOST_RELEVANT
-        count=3, # defaults to 100
-        filter_score_with=5 # defaults to None(means all score)
+        count=5, # defaults to 100
+        filter_score_with=2 # defaults to None(means all score)
     )
 
-    data_length = len(result)
-
-    if data_length > 0:
-        return result
-    else:
-        return json.dumps([])
+    return json.dumps(result, indent=4, sort_keys=True, default=str)
